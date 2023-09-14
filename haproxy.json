@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "id": "haproxy1",
+      "name": "haproxy",
+      "address": "172.18.0.197",
+      "port": 3301,
+      "checks": [{
+        "name": "haproxy_check",
+        "tcp": "172.18.0.197:3301",
+        "interval": "10s",
+        "timeout": "5s"
+      }]
+    },
+    {
+      "id": "haproxy2",
+      "name": "haproxy",
+      "address": "172.18.0.198",
+      "port": 3301,
+      "checks": [{
+        "name": "haproxy_check",
+        "tcp": "172.18.0.198:3301",
+        "interval": "10s",
+        "timeout": "5s"
+      }]
+    },
+    {
+      "id": "haproxy3",
+      "name": "haproxy",
+      "address": "172.18.0.199",
+      "port": 3301,
+      "checks": [{
+        "name": "haproxy_check",
+        "tcp": "172.18.0.199:3301",
+        "interval": "10s",
+        "timeout": "5s"
+      }]
+    }
+  ]
+}
